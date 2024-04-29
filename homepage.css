@@ -1,0 +1,54 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a more modern font */
+    line-height: 1.6; /* Improved readability with increased line height */
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+/* Header styles */
+header {
+    background-color: #007bff; /* Blue header background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center; /* Center align header content */
+}
+
+header h1 {
+    font-size: 28px; /* Larger header font size */
+    margin-bottom: 10px;
+}
+
+header img {
+    vertical-align: middle; /* Align logo vertically */
+    margin-right: 10px; /* Add space between logo and text */
+}
+
+nav {
+    margin-bottom: 20px; /* Increased spacing below navigation */
+    text-align: center; /* Center align navigation links */
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Adjust spacing between buttons */
+    border: 2px solid #007bff; /* Visible border with blue color */
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+h3 {
+    margin-bottom: 5px; /* Adjust spacing below h3 */
+}
