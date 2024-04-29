@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - ModelMaster</title>
+    <style>
+        /* Embedded CSS for header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #FFFFFF;
+            color: #000000;
+            text-align: center;
+            padding: 20px 0;
+            z-index: 1000; /* Ensure header is above other elements */
+        }
+
+        #logo {
+            width: 180px; /* Adjust to decrease the size of the logo */
+            height: auto;
+            margin-left: 20px; /* Adjust to your preference */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Embedded CSS for footer */
+        footer {
+            bottom: 0;
+            width: 100%;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #FFFFFF;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Embedded CSS for vaporwave background */
+        body {
+            background-image: url('vaporwavebackground.jpg');
+            background-size: cover;
+            background-position: center bottom; /* Adjust background position */
+            color: #FFFFFF;
+            text-align: center;
+            background-color: transparent !important;
+            margin: 0;
+            padding: 50;
+            padding-top: 150px; /* Adjust to create more space */
+            position: relative; /* Add relative positioning for absolute positioning inside */
+        }
+
+        #modelmaster-download {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex; /* Use flexbox to align images */
+            align-items: center; /* Center items vertically */
+        }
+
+        #modelmaster-download img {
+            width: auto; /* Adjust size as needed */
+            max-width: 100%; /* Ensure images don't exceed container width */
+            height: auto;
+            border: 3px solid #00FFFF;
+            margin-right: 20px; /* Add margin between images */
+        }
+
+        /* Add background color for system requirements */
+        .system-requirements {
+            background-color: black;
+            padding: 20px;
+            margin-top: 20px; /* Add margin to separate from header */
+            color: white; /* Set text color to white */
+        }
+
+        /* Style for system requirements content */
+        .system-requirements-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .system-requirements h2 {
+            margin-bottom: 20px;
+        }
+
+        .system-requirements h3 {
+            margin-top: 20px;
+        }
+
+        .system-requirements ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .system-requirements ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Style for "Create Now." text */
+        #create-now {
+            position: absolute;
+            top: 20px; /* Adjust vertical position */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            color: pink;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="downloadaboutstyles.css">
+
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <img id="logo" src="websitelogo.png" alt="ModelMaster Logo">
+    <h1>Unleash your creativity in 3 dimensions with ModelMaster!</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="downloadpage.html">Download</a></li>
+            <li><a href="supportpage.html">Support</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Vaporwave background -->
+<div id="vaporwave-background">
+    <div id="modelmaster-download">
+        <img src="modelmasterdownloadpic.jpg" alt="ModelMaster Download">
+    </div>
+    <img id="vaporwave-background-img" src="vaporwave background.jpg" alt="vaporwave-background">
+    <!-- "Create Now." text -->
+    <div id="create-now">Create Now.</div>
+</div>
+
+<!-- System Requirements -->
+<div class="system-requirements">
+    <div class="system-requirements-content">
+        <h2>System Requirements</h2>
+        <div>
+            <h3>Processor:</h3>
+            <ul>
+                <li>Minimum: Intel Core i5 or AMD Ryzen 5 processor</li>
+                <li>Recommended: Intel Core i7 or AMD Ryzen 7 processor</li>
+                <li>ModelMaster may also be compatible with equivalent processors from other manufacturers.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>RAM (Random Access Memory):</h3>
+            <ul>
+                <li>Minimum: 8 GB RAM</li>
+                <li>Recommended: 16 GB RAM</li>
+                <li>ModelMaster requires sufficient RAM for smooth rendering and manipulation of 3D models.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Storage:</h3>
+            <ul>
+                <li>Minimum: 271 MB of available storage space</li>
+                <li>ModelMaster is designed to be lightweight and efficient, requiring only a small amount of storage for installation.</li>
+                <li>Additional storage may be necessary for saving project files and assets, depending on the complexity of the models created.</li>
+            </ul>
+        </div>
+        <p>These system requirements ensure that users can run ModelMaster smoothly on their devices and have enough resources to create and manipulate 3D models effectively.</p>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <img class="footer-logo" src="websitelogo.png" alt="ModelMaster Logo">
+    <p>&copy; 2024 ModelMaster. All rights reserved. | <a href="#" style="text-decoration: none;">Privacy Policy</a></p>
+</footer>
+</body>
+</html>

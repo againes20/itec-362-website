@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - ModelMaster</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #form-container {
+            position: absolute;
+            top: 40%; /* Adjusted to move it up */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: black; /* Changed text color to black */
+            z-index: 1; /* Ensure form is above other elements */
+        }
+
+        #faqs {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 1; /* Ensure FAQs section is above other elements */
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #faqs h2 {
+            margin-top: 0;
+        }
+
+        #faqs ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #faqs li {
+            margin-bottom: 20px;
+        }
+
+        #faqs h3 {
+            color: white;
+        }
+
+        #faqs p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="websitelogo.png" alt="ModelMaster Logo">
+        <h1>Unleash your creativity in 3 dimensions with ModelMaster!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="downloadpage.html">Download</a></li>
+                <li><a href="supportpage.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Vaporwavetree image -->
+    <img id="vaporwavetree-img" src="vaporwavetree2.png" alt="Vaporwave Tree" style="width: 100%; position: absolute; top: 0; left: 0; z-index: 0;">
+
+    <main>
+        <div id="form-container">
+            <h2 style="color: black;">Support</h2> <!-- Changed text color to black -->
+            <form id="support-form" action="submit-support.php" method="post" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                <label for="name" style="color: white;">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email" style="color: white;">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message" style="color: white;">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required style="width: 100%;"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- FAQs Section -->
+        <section id="faqs">
+            <h2>FAQs</h2>
+            <ul>
+                <li>
+                    <h3>1. How can I import models into ModelMaster?</h3>
+                    <p>You can import models by using the "Import" option in the File menu.</p>
+                </li>
+                <li>
+                    <h3>2. Is ModelMaster compatible with VR headsets?</h3>
+                    <p>Yes, ModelMaster supports VR headsets for immersive modeling experiences.</p>
+                </li>
+                <li>
+                    <h3>3. Can I export models created in ModelMaster to other 3D software?</h3>
+                    <p>Yes, you can export models in various file formats compatible with other 3D software.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('support-form').addEventListener('submit', function(event) {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            if (!name || !email || !message) {
+                alert('Please fill out all fields.');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
